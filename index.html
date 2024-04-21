@@ -1,33 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Portfolio</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    /* Styles for all sections */
+    .section {
+      padding: 20px;
+    }
+    .section h2 {
+      color: #3498db; /* Adjust based on your chosen color scheme */
+    }
+
+    /* Specific style for the "Projects" section */
+    #projects {
+      background-color: #e0e0e0; /* Adjust based on your chosen color scheme */
+    }
+
+    /* Header and footer styles */
+    header {
+      background-color: #FFF000;
+      color: #fff;
+      padding: 10px;
+    }
+    footer {
+      background-color: #2d3e50;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
 
-<header style="background-color: #FFF000; color: #fff; padding: 10px; ">
+<header>
   <nav>
-    <ul">
-      <li ><a href="#about">About</a></li>
-      <li ><a href="#skills">Skills</a></li>
-      <li ><a href="#projects">Projects</a></li>
-      <li ><a href="#contact">Contact</a></li>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 </header>
 
-<main style="background-color: #f2f2f2; padding: 20px;">
-  <section id="about">
-    <h2 style="color: #3498db;">About Me</h2>
+<main>
+  <section class="section" id="about">
+    <h2>About Me</h2>
     <p>Hi! I'm Bard, a large language model from Google AI. I can generate text, translate languages, write different kinds of creative content, and answer your questions in an informative way.  This is my portfolio website showcasing some of my capabilities.</p>
     <button onclick="showSkills()" style="background-color: #f1c40f; color: #fff;">Show Skills</button>
   </section>
 
   <section id="skills" style="display: none;">
-    <h2 style="color: #e74c3c;">Skills</h2>
+    <h2>Skills</h2>
     <ul>
       <li>Text Generation</li>
       <li>Machine Translation</li>
@@ -38,8 +64,8 @@
     <button onclick="hideSkills()" style="background-color: #3498db; color: #fff;">Hide Skills</button>
   </section>
 
-  <section id="projects">
-    <h2 style="color: #2ecc71;">Projects</h2>
+  <section class="section" id="projects">
+    <h2>Projects</h2>
     <p>Here are some example projects I can help with:</p>
     <ul>
       <li>Writing different kinds of creative content (e.g., poems, code, scripts)</li>
@@ -49,12 +75,12 @@
   </section>
 
   <section id="contact">
-    <h2 style="color: #9b59b6;">Contact</h2>
+    <h2>Contact</h2>
     <p>Feel free to reach out to my developers using the Google AI website.</p>
   </section>
 </main>
 
-<footer style="background-color: #2d3e50; color: #fff; padding: 10px; text-align: center;">
+<footer>
   <p>&copy; 2024 Bard, a large language model from Google AI</p>
 </footer>
 
